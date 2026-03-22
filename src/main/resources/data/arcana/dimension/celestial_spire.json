@@ -1,0 +1,11 @@
+{
+  "type": "arcana:celestial_spire",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "arcana:star_gardens"
+    },
+    "settings": "minecraft:overworld"
+  }
+}

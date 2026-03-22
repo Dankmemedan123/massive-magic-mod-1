@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:aethrium_ingot"
+    },
+    "title": "Enter Arcane Realm",
+    "description": "Enter the Arcane Realm",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:crystal_king_slayer",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

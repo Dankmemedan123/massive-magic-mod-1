@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:arcane_amethyst"
+    },
+    "title": "Time Lord",
+    "description": "Cast Time Slow",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:grand_archmage",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

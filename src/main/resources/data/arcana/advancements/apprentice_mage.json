@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:mana_dust"
+    },
+    "title": "Apprentice Mage",
+    "description": "Cast your first spell",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:first_wand",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

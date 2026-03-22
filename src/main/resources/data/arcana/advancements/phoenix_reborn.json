@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:fire_heart"
+    },
+    "title": "Phoenix Reborn",
+    "description": "Use Phoenix Form",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:master_pyromancer",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

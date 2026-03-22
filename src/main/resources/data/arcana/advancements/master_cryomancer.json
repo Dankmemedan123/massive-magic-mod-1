@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:frost_sapphire"
+    },
+    "title": "Master Cryomancer",
+    "description": "Reach Cryomancy mastery 100",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:apprentice_mage",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "arcana:block/celestium_block"
+    }
+  }
+}

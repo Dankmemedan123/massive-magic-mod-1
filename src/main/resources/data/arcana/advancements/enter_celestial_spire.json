@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:celestium_ingot"
+    },
+    "title": "Enter Celestial Spire",
+    "description": "Enter the Celestial Spire",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:enter_shadow_depths",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

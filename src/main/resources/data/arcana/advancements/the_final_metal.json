@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:eternium_ingot"
+    },
+    "title": "The Final Metal",
+    "description": "Obtain Eternium",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:enter_celestial_spire",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

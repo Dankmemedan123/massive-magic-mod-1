@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:lich_crown"
+    },
+    "title": "Lich Slayer",
+    "description": "Defeat the Shadow Lich",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:crystal_king_slayer",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

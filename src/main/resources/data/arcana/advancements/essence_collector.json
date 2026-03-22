@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:arcane_essence"
+    },
+    "title": "Essence Collector",
+    "description": "Collect all 8 elemental essences",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:apprentice_mage",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

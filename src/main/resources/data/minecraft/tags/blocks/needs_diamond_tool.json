@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "arcana:moonsilver_ore",
+    "arcana:sunsteel_ore",
+    "arcana:voidstone_ore",
+    "arcana:starmetal_ore",
+    "arcana:aethrium_ore",
+    "arcana:shadowite_ore",
+    "arcana:deepslate_moonsilver_ore",
+    "arcana:deepslate_sunsteel_ore",
+    "arcana:deepslate_voidstone_ore",
+    "arcana:deepslate_starmetal_ore",
+    "arcana:deepslate_aethrium_ore",
+    "arcana:deepslate_shadowite_ore"
+  ]
+}

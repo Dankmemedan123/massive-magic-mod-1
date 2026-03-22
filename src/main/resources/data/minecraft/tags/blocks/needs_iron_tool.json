@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "arcana:arcanite_ore",
+    "arcana:deepslate_arcanite_ore",
+    "arcana:runestone_ore",
+    "arcana:deepslate_runestone_ore",
+    "arcana:crystalite_ore",
+    "arcana:deepslate_crystalite_ore"
+  ]
+}

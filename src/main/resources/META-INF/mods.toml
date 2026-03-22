@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+    modId="arcana"
+    version="0.1.0"
+    displayName="Arcana"
+    description='''
+        A massive magic, tech, and adventure mod. 12 ores, 18 alloys, 10 gems,
+        8 schools of magic, 40 spells, 3 dimensions, 8 bosses, 30+ mobs,
+        and hundreds of items. One mod to replace them all.
+    '''
+
+[[dependencies.arcana]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.arcana]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"

@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:void_heart"
+    },
+    "title": "Void Conqueror",
+    "description": "Defeat the Void Incarnate",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:dragon_slayer",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

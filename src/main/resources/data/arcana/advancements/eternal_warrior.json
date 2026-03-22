@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:eternium_alloy_ingot"
+    },
+    "title": "Eternal Warrior",
+    "description": "Craft full Eternium armor",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:the_final_metal",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

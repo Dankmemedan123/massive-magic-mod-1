@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:arcane_guidebook"
+    },
+    "title": "Structure Explorer",
+    "description": "Find 10 different structures",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:arcane_awakening",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

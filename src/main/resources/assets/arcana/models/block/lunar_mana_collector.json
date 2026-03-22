@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "arcana:block/lunar_mana_collector"
+  }
+}

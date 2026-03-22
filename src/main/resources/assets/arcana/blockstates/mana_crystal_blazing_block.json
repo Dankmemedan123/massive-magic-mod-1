@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "arcana:block/mana_crystal_blazing_block"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:archon_heart"
+    },
+    "title": "Archon Slayer",
+    "description": "Defeat the Archon",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:crystal_king_slayer",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

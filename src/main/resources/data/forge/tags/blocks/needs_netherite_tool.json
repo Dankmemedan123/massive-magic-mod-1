@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "arcana:draconic_ore",
+    "arcana:celestium_ore",
+    "arcana:eternium_ore",
+    "arcana:deepslate_draconic_ore",
+    "arcana:deepslate_celestium_ore",
+    "arcana:deepslate_eternium_ore"
+  ]
+}

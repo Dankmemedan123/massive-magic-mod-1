@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:dragon_soul"
+    },
+    "title": "Dragon Slayer",
+    "description": "Defeat the Arcane Dragon",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:archon_slayer",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

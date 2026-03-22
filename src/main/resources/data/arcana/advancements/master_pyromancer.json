@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:fire_ruby"
+    },
+    "title": "Master Pyromancer",
+    "description": "Reach Pyromancy mastery 100",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:apprentice_mage",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

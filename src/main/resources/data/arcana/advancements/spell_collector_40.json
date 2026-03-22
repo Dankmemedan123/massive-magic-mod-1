@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:arcane_tome"
+    },
+    "title": "Spell Collector 40",
+    "description": "Learn all 40 spells",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:spell_collector_10",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

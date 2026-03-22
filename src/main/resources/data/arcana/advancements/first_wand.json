@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:arcanite_wand"
+    },
+    "title": "First Wand",
+    "description": "Craft your first wand",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:arcane_awakening",
+  "criteria": {
+    "arcanite_wand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arcana:arcanite_wand"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

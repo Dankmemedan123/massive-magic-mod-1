@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:crystal_heart"
+    },
+    "title": "Crystal King Slayer",
+    "description": "Defeat the Crystal Golem King",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:arcane_awakening",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

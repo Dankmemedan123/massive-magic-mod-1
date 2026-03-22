@@ -1,0 +1,11 @@
+{
+  "type": "arcana:arcane_realm",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "arcana:mana_gardens"
+    },
+    "settings": "minecraft:overworld"
+  }
+}

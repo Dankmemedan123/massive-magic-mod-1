@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:mana_crystal_prismatic"
+    },
+    "title": "Ultimate Power",
+    "description": "Cast your first Ultimate spell",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:grand_archmage",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

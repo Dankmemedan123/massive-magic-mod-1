@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "arcana:block/crystal_alloy_block"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "arcana:block/ritual_altar_core"
+    }
+  }
+}

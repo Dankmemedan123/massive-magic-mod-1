@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:shadowite_ingot"
+    },
+    "title": "Enter Shadow Depths",
+    "description": "Enter the Shadow Depths",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:enter_arcane_realm",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

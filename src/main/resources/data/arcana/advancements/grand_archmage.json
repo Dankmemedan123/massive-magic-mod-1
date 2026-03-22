@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:archmage_staff"
+    },
+    "title": "Grand Archmage",
+    "description": "Master all 8 schools",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:master_pyromancer",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

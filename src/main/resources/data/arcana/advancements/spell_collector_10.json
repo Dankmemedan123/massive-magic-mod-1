@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:spell_page_blank"
+    },
+    "title": "Spell Collector 10",
+    "description": "Learn 10 spells",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:apprentice_mage",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

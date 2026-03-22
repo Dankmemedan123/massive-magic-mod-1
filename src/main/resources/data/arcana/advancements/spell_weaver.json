@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "arcana:arcane_dust"
+    },
+    "title": "Spell Weaver",
+    "description": "Discover a spell combo",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arcana:apprentice_mage",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

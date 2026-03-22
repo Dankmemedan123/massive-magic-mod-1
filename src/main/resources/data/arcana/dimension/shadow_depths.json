@@ -1,0 +1,11 @@
+{
+  "type": "arcana:shadow_depths",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "arcana:fungal_caverns"
+    },
+    "settings": "minecraft:nether"
+  }
+}
