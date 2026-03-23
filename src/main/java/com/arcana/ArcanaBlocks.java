@@ -28,9 +28,9 @@ public class ArcanaBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, ArcanaMod.MOD_ID);
 
-    // Also register BlockItems in the item registry
-    public static final DeferredRegister<Item> BLOCK_ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, ArcanaMod.MOD_ID);
+    // BlockItems are registered in the SAME item registry as ArcanaItems
+    // to avoid duplicate DeferredRegister conflict (Forge only allows one per mod per registry)
+    // We access ArcanaItems.ITEMS directly.
 
     // Lookup maps
     public static final Map<String, RegistryObject<Block>> ORE_BLOCKS = new LinkedHashMap<>();
@@ -173,7 +173,7 @@ public class ArcanaBlocks {
 
     private static RegistryObject<Block> registerWithItem(String name, java.util.function.Supplier<Block> blockSupplier) {
         RegistryObject<Block> block = BLOCKS.register(name, blockSupplier);
-        BLOCK_ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        ArcanaItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
         return block;
     }
 

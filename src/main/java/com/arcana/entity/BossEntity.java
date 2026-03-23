@@ -49,7 +49,7 @@ public class BossEntity extends Monster {
                 BossEvent.BossBarOverlay.PROGRESS
         );
         this.xpReward = 500;
-        this.setPersistenceRequired(true);
+        this.setPersistenceRequired();
     }
 
     public static AttributeSupplier.Builder createBossAttributes(String name) {

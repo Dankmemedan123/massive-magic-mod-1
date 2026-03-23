@@ -5,9 +5,11 @@ import com.arcana.data.ArcanaEffects;
 import com.arcana.data.ArcanaEnchantments;
 import com.arcana.entity.ArcanaEntities;
 import com.arcana.entity.ArcanaMob;
+import com.arcana.entity.ArcanaPassiveMob;
 import com.arcana.entity.BossEntity;
 import com.arcana.magic.ArcanaSpell;
 import com.arcana.network.ArcanaNetwork;
+import net.minecraft.world.entity.EntityType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
@@ -30,7 +32,6 @@ public class ArcanaMod {
         // Register ALL deferred registers (all phases)
         ArcanaItems.ITEMS.register(modBus);
         ArcanaBlocks.BLOCKS.register(modBus);
-        ArcanaBlocks.BLOCK_ITEMS.register(modBus);
         ArcanaTab.TABS.register(modBus);
         ArcanaEntities.ENTITIES.register(modBus);         // Phase 5
         ArcanaEnchantments.ENCHANTMENTS.register(modBus);  // Phase 6
@@ -67,17 +68,26 @@ public class ArcanaMod {
     }
 
     /** Register attributes for ALL entity types */
+    @SuppressWarnings({"unchecked", "rawtypes"})
     private void onEntityAttributes(EntityAttributeCreationEvent event) {
-        // Register default attributes for all mob types
         ArcanaEntities.ENTITIES.getEntries().forEach(entry -> {
             String name = entry.getId().getPath();
             try {
-                if (name.contains("boss") || name.contains("king") || name.contains("lich")
-                        || name.contains("archon") || name.contains("drake") || name.contains("wyrm")
-                        || name.contains("dragon") || name.contains("incarnate")) {
-                    event.put(entry.get(), BossEntity.createDefaultBossAttributes().build());
+                EntityType rawType = entry.get();
+                if (name.contains("crystal_golem_king") || name.contains("corrupted_mage_boss")
+                        || name.contains("shadow_lich") || name.contains("the_archon")
+                        || name.contains("infernal_drake") || name.contains("frost_wyrm")
+                        || name.contains("arcane_dragon") || name.contains("void_incarnate")) {
+                    event.put(rawType, BossEntity.createDefaultBossAttributes().build());
+                } else if (name.contains("butterfly") || name.contains("deer") || name.contains("fox")
+                        || name.contains("jellyfish") || name.contains("cat") || name.contains("bird")
+                        || name.contains("eagle") || name.contains("strider") || name.contains("beetle")
+                        || name.contains("pixie") || name.contains("soul_wisp")
+                        || name.contains("wandering") || name.contains("guild") || name.contains("alchemist")
+                        || name.contains("runesmith") || name.contains("merchant") || name.contains("lorekeeper")) {
+                    event.put(rawType, ArcanaPassiveMob.createPassiveAttributes().build());
                 } else {
-                    event.put(entry.get(), ArcanaMob.createDefaultAttributes().build());
+                    event.put(rawType, ArcanaMob.createDefaultAttributes().build());
                 }
             } catch (Exception e) {
                 LOGGER.warn("[Arcana] Failed to register attributes for {}: {}", name, e.getMessage());

@@ -94,19 +94,26 @@ public class ArcanaNetwork {
         public static void handle(SyncManaPacket pkt,
                                    Supplier<net.minecraftforge.network.NetworkEvent.Context> ctx) {
             ctx.get().enqueueWork(() -> {
-                // Client-side: update local player's mana capability
-                var mc = net.minecraft.client.Minecraft.getInstance();
-                if (mc.player != null) {
-                    mc.player.getCapability(ManaCapability.MANA_CAP).ifPresent(data -> {
-                        data.setMana(pkt.mana);
-                        data.setMaxMana(pkt.maxMana);
-                        data.setRegenRate(pkt.regenRate);
-                        for (int i = 0; i < 8; i++) data.setMastery(i, pkt.mastery[i]);
-                        data.setSelectedSpellIndex(pkt.selectedSpell);
-                    });
-                }
+                // Client-side only — use DistExecutor pattern
+                net.minecraftforge.fml.DistExecutor.unsafeRunWhenOn(
+                        net.minecraftforge.api.distmarker.Dist.CLIENT,
+                        () -> () -> handleClient(pkt));
             });
             ctx.get().setPacketHandled(true);
+        }
+
+        @net.minecraftforge.api.distmarker.OnlyIn(net.minecraftforge.api.distmarker.Dist.CLIENT)
+        private static void handleClient(SyncManaPacket pkt) {
+            var mc = net.minecraft.client.Minecraft.getInstance();
+            if (mc.player != null) {
+                mc.player.getCapability(ManaCapability.MANA_CAP).ifPresent(data -> {
+                    data.setMana(pkt.mana);
+                    data.setMaxMana(pkt.maxMana);
+                    data.setRegenRate(pkt.regenRate);
+                    for (int i = 0; i < 8; i++) data.setMastery(i, pkt.mastery[i]);
+                    data.setSelectedSpellIndex(pkt.selectedSpell);
+                });
+            }
         }
     }
 

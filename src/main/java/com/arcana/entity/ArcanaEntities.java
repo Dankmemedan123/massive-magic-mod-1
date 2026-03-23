@@ -96,30 +96,30 @@ public class ArcanaEntities {
             registerMob("eternium_construct", 1.4f, 2.7f, MobCategory.MONSTER);
 
     // ═══ PASSIVE / NEUTRAL (12) ═══
-    public static final RegistryObject<EntityType<ArcanaMob>> MANA_BUTTERFLY =
-            registerMob("mana_butterfly", 0.3f, 0.3f, MobCategory.AMBIENT);
-    public static final RegistryObject<EntityType<ArcanaMob>> CRYSTAL_DEER =
-            registerMob("crystal_deer", 0.9f, 1.3f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> ARCANE_FOX =
-            registerMob("arcane_fox", 0.6f, 0.7f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> LUMINOUS_JELLYFISH =
-            registerMob("luminous_jellyfish", 0.7f, 0.7f, MobCategory.AMBIENT);
-    public static final RegistryObject<EntityType<ArcanaMob>> SHADOW_CAT =
-            registerMob("shadow_cat", 0.6f, 0.7f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> STAR_BIRD =
-            registerMob("star_bird", 0.5f, 0.5f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> STORM_EAGLE =
-            registerMob("storm_eagle", 1.0f, 0.8f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> FROST_STRIDER =
-            registerMob("frost_strider", 1.4f, 0.9f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> FIRE_BEETLE =
-            registerMob("fire_beetle", 0.8f, 0.6f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> ARCTIC_FOX =
-            registerMob("arctic_fox", 0.6f, 0.7f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> PIXIE =
-            registerMob("pixie", 0.3f, 0.5f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> SOUL_WISP =
-            registerMob("soul_wisp", 0.4f, 0.4f, MobCategory.AMBIENT);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> MANA_BUTTERFLY =
+            registerPassive("mana_butterfly", 0.3f, 0.3f, MobCategory.AMBIENT);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> CRYSTAL_DEER =
+            registerPassive("crystal_deer", 0.9f, 1.3f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> ARCANE_FOX =
+            registerPassive("arcane_fox", 0.6f, 0.7f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> LUMINOUS_JELLYFISH =
+            registerPassive("luminous_jellyfish", 0.7f, 0.7f, MobCategory.AMBIENT);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> SHADOW_CAT =
+            registerPassive("shadow_cat", 0.6f, 0.7f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> STAR_BIRD =
+            registerPassive("star_bird", 0.5f, 0.5f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> STORM_EAGLE =
+            registerPassive("storm_eagle", 1.0f, 0.8f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> FROST_STRIDER =
+            registerPassive("frost_strider", 1.4f, 0.9f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> FIRE_BEETLE =
+            registerPassive("fire_beetle", 0.8f, 0.6f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> ARCTIC_FOX =
+            registerPassive("arctic_fox", 0.6f, 0.7f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> PIXIE =
+            registerPassive("pixie", 0.3f, 0.5f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> SOUL_WISP =
+            registerPassive("soul_wisp", 0.4f, 0.4f, MobCategory.AMBIENT);
 
     // ═══ BOSSES (8) ═══
     public static final RegistryObject<EntityType<BossEntity>> CRYSTAL_GOLEM_KING =
@@ -139,19 +139,19 @@ public class ArcanaEntities {
     public static final RegistryObject<EntityType<BossEntity>> VOID_INCARNATE =
             registerBoss("void_incarnate", 3.0f, 5.0f);
 
-    // ═══ NPCs (6) ═══
-    public static final RegistryObject<EntityType<ArcanaMob>> WANDERING_MAGE =
-            registerMob("wandering_mage", 0.6f, 1.95f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> MAGE_GUILD_MASTER =
-            registerMob("mage_guild_master", 0.6f, 1.95f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> ALCHEMIST_NPC =
-            registerMob("alchemist_npc", 0.6f, 1.95f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> RUNESMITH_NPC =
-            registerMob("runesmith_npc", 0.6f, 1.95f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> CRYSTAL_MERCHANT =
-            registerMob("crystal_merchant", 0.6f, 1.95f, MobCategory.CREATURE);
-    public static final RegistryObject<EntityType<ArcanaMob>> LOREKEEPER =
-            registerMob("lorekeeper", 0.6f, 1.95f, MobCategory.CREATURE);
+    // ═══ NPCs (6) — use passive so they're friendly ═══
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> WANDERING_MAGE =
+            registerPassive("wandering_mage", 0.6f, 1.95f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> MAGE_GUILD_MASTER =
+            registerPassive("mage_guild_master", 0.6f, 1.95f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> ALCHEMIST_NPC =
+            registerPassive("alchemist_npc", 0.6f, 1.95f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> RUNESMITH_NPC =
+            registerPassive("runesmith_npc", 0.6f, 1.95f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> CRYSTAL_MERCHANT =
+            registerPassive("crystal_merchant", 0.6f, 1.95f, MobCategory.CREATURE);
+    public static final RegistryObject<EntityType<ArcanaPassiveMob>> LOREKEEPER =
+            registerPassive("lorekeeper", 0.6f, 1.95f, MobCategory.CREATURE);
 
     // ─── Registration helpers ───
 
@@ -159,6 +159,14 @@ public class ArcanaEntities {
             String name, float width, float height, MobCategory category) {
         return ENTITIES.register(name, () ->
                 EntityType.Builder.<ArcanaMob>of(ArcanaMob::new, category)
+                        .sized(width, height)
+                        .build(new ResourceLocation(ArcanaMod.MOD_ID, name).toString()));
+    }
+
+    private static RegistryObject<EntityType<ArcanaPassiveMob>> registerPassive(
+            String name, float width, float height, MobCategory category) {
+        return ENTITIES.register(name, () ->
+                EntityType.Builder.<ArcanaPassiveMob>of(ArcanaPassiveMob::new, category)
                         .sized(width, height)
                         .build(new ResourceLocation(ArcanaMod.MOD_ID, name).toString()));
     }

@@ -91,7 +91,13 @@ public class SpellCastHandler {
             }
             case FIRE_WALL -> {
                 // Place fire blocks in a 5-wide wall perpendicular to look direction
-                Vec3 right = look.cross(new Vec3(0, 1, 0)).normalize();
+                // Manual cross product (Vec3.cross doesn't exist in vanilla MC)
+                Vec3 up = new Vec3(0, 1, 0);
+                Vec3 right = new Vec3(
+                        look.z * up.y - look.y * up.z,
+                        look.x * up.z - look.z * up.x,
+                        look.y * up.x - look.x * up.y
+                ).normalize();
                 for (int i = -2; i <= 2; i++) {
                     for (int y = 0; y < 3; y++) {
                         BlockPos wallPos = new BlockPos(

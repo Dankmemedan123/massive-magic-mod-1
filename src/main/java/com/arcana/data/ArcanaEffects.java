@@ -22,9 +22,9 @@ public class ArcanaEffects {
             () -> new ArcanaMobEffect(MobEffectCategory.HARMFUL, 0xFF4444));
     public static final RegistryObject<MobEffect> CORRUPTION = EFFECTS.register("corruption",
             () -> new ArcanaMobEffect(MobEffectCategory.HARMFUL, 0x442266)
-                    .addAttributeModifier(Attributes.ATTACK_DAMAGE, "arcana:corruption_attack",
+                    .addAttributeModifier(Attributes.ATTACK_DAMAGE, "a1b2c3d4-1111-4000-8000-000000000001",
                             -2.0, AttributeModifier.Operation.ADDITION)
-                    .addAttributeModifier(Attributes.MOVEMENT_SPEED, "arcana:corruption_speed",
+                    .addAttributeModifier(Attributes.MOVEMENT_SPEED, "a1b2c3d4-1111-4000-8000-000000000002",
                             -0.05, AttributeModifier.Operation.ADDITION));
     public static final RegistryObject<MobEffect> SOUL_LINK = EFFECTS.register("soul_link",
             () -> new ArcanaMobEffect(MobEffectCategory.HARMFUL, 0x88CCCC));
@@ -38,13 +38,13 @@ public class ArcanaEffects {
             () -> new ArcanaMobEffect(MobEffectCategory.BENEFICIAL, 0x332244));
     public static final RegistryObject<MobEffect> STONE_SKIN_EFFECT = EFFECTS.register("stone_skin_effect",
             () -> new ArcanaMobEffect(MobEffectCategory.BENEFICIAL, 0x888888)
-                    .addAttributeModifier(Attributes.ARMOR, "arcana:stone_skin_armor",
+                    .addAttributeModifier(Attributes.ARMOR, "a1b2c3d4-2222-4000-8000-000000000003",
                             4.0, AttributeModifier.Operation.ADDITION)
-                    .addAttributeModifier(Attributes.MOVEMENT_SPEED, "arcana:stone_skin_slow",
+                    .addAttributeModifier(Attributes.MOVEMENT_SPEED, "a1b2c3d4-2222-4000-8000-000000000004",
                             -0.03, AttributeModifier.Operation.ADDITION));
     public static final RegistryObject<MobEffect> WIND_SPEED = EFFECTS.register("wind_speed",
             () -> new ArcanaMobEffect(MobEffectCategory.BENEFICIAL, 0xAADDBB)
-                    .addAttributeModifier(Attributes.MOVEMENT_SPEED, "arcana:wind_speed",
+                    .addAttributeModifier(Attributes.MOVEMENT_SPEED, "a1b2c3d4-3333-4000-8000-000000000005",
                             0.06, AttributeModifier.Operation.ADDITION));
     public static final RegistryObject<MobEffect> TIME_DILATION = EFFECTS.register("time_dilation",
             () -> new ArcanaMobEffect(MobEffectCategory.BENEFICIAL, 0xCCAA44));
